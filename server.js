@@ -11,8 +11,8 @@ app.get('/rooms', (request, response) => {
 });
 
 app.post('/rooms', (request, response) => {
-
-}
+    console.log('Hi');
+})
 
 io.on('connection', (socket) => {
     console.log('User connected', socket.id);
